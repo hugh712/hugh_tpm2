@@ -1,7 +1,7 @@
 # Check all capability
 
-'''
-sudo tpm2_getcap algorithms
+
+```sudo tpm2_getcap algorithms
 
 rsa:
   value:      0x1
@@ -303,5 +303,4 @@ ecb:
   signing:    0
   encrypting: 1
   method:     0
-
-'''
+```
