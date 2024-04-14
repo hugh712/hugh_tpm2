@@ -1,7 +1,8 @@
 # Check all capability
 
 
-```sudo tpm2_getcap algorithms
+```
+sudo tpm2_getcap algorithms
 
 rsa:
   value:      0x1
