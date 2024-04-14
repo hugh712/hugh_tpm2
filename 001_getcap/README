@@ -1,5 +1,10 @@
 # Check all capability
 
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
 
 ```
 sudo tpm2_getcap algorithms
