@@ -18,3 +18,9 @@ Typically a Resource Manager (like tpm2‐abrmd (https://github.com/tpm2‐softw
 `tpm2_shutdown ‐c`
 
 ## Clean the TPM
+
+#### Set owner, endorsement and lockout authorizations to an empty value
+`tpm2_clear lockoutpasswd`
+
+####  Clear the authorization values on the platform hierarchy
+`tpm2_clear -c p`
