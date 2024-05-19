@@ -3,24 +3,27 @@
 
 #### Create a key and get attested TPM time
 
-##### Create a primary, and export as primary.ctx
+## Example - Create a rsa key and get attested TPM time
+#### (1) Create a primary, and export as primary.ctx
 `tpm2_createprimary -C e -c primary.ctx`
 
-##### Create a rsa key
-###### -u is the public key export, 
-###### -r is the private key export
+#### (2) Create a rsa key
 `tpm2_create -G rsa2048:rsaes -u rsa.pub -r rsa.priv -C primary.ctx`
+###### -u is the public key export
+###### -r is the private key export
 
-##### Load both the private and public portions of an object into the TPM
+
+#### (3) Load both the private and public portions of an object into the TPM
+`tpm2_load -C primary.ctx -u rsa.pub -r rsa.priv -c rsa.ctx`
 ###### -u is the import public key
 ###### -r is the import private key
 ###### -c is the file name of the saved object context, for future interactions with the object
 ###### The tool outputs the name of the loaded object in a YAML dictionary format with the key name where the value for that key is the name of the object in hex format
-`tpm2_load -C primary.ctx -u rsa.pub -r rsa.priv -c rsa.ctx`
 
-##### Use the saved object context to get current time 
-###### It returns both a signature, and the data in the standard TPM attestation form
+
+#### (4) Use the saved object context to get current time 
 `tpm2_gettime -c rsa.ctx -o attest.sig --attestation attest.data`
+###### It returns both a signature, and the data in the standard TPM attestation form
 
 ###### It outputs to stdout, in YAML format, the TPMS_TIME_INFO structure from the TPM.  The structure contains the current setting of Time, Clock, resetCount,  and  restartCount.
 
