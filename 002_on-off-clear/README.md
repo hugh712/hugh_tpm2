@@ -1,26 +1,30 @@
+# Description
+Startup the TPM
 
-## Startup the TPM
 Typically a Resource Manager (like tpm2‐abrmd (https://github.com/tpm2‐software/tpm2‐abrmd)) or low‐level/boot software will have already sent this command.
 
+# Usage
 `tpm2_startup`
 
-##### Send a TPM Startup Command with flags TPM2_SU_STATE
+# Example 1 - Start the TPM
 `sudo tpm2_startup`
-##### Send a TPM Startup Command with flags TPM2_SU_CLEAR
+###### Send a TPM Startup Command with flags TPM2_SU_STATE
+
 `sudo tpm2_startup -c`
+###### Send a TPM Startup Command with flags TPM2_SU_CLEAR
 
-## Shutdown the TPM
+# Example 2 - Shutdown the TPM
 
-##### Send a TPM Shutdown Command with flags TPM2_SU_STATE
 `tpm2_shutdown`
+###### Send a TPM Shutdown Command with flags TPM2_SU_STATE
 
-##### Send a TPM Shutdown Command with flags TPM2_SU_CLEAR
 `tpm2_shutdown ‐c`
+###### Send a TPM Shutdown Command with flags TPM2_SU_CLEAR
 
-## Clean the TPM
+# Example 3 - Clean the TPM
 
-#### Set owner, endorsement and lockout authorizations to an empty value
 `tpm2_clear lockoutpasswd`
+###### Set owner, endorsement and lockout authorizations to an empty value
 
-####  Clear the authorization values on the platform hierarchy
 `tpm2_clear -c p`
+######  Clear the authorization values on the platform hierarchy
