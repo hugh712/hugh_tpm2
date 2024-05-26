@@ -3,6 +3,8 @@
 
 ## Bank
 
+## Primary
+
 ## Hierachy
 - o for TPM_RH_OWNER
 - p for TPM_RH_PLATFORM
