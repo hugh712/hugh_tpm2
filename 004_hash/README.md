@@ -9,4 +9,7 @@ Output defaults to stdout and binary format unless otherwise specified via -o an
 
 # Example 1 - Hash a file with sha1 hash algorithm and save the hash and ticket to a file
 `tpm2_hash -C e -g sha1 -o hash.bin -t ticket.bin data.txt`
-###### Generate a random 20 bytes and output the binary data to a file
+###### -C e => set hierachy as Endorsement
+###### -g sha1 => set hash algorithm as sha1, check available algorithm as `sudo tpm2_getcap algorithms`
+###### -t ticket.bin ==> Optional file record of the ticket result.
+###### output result to data.txt
