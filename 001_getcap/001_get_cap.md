@@ -98,5 +98,17 @@
 `tpm2_readpublic -c primary.ctx -o output.dat -f pem`
 ###### read the public structure in an openssl compliant format
 
+## Serialize an existing persistent object handle to disk for later use
 
+`tpm2_createprimary -c primary.ctx`
 
+`tpm2_evictcontrol -c primary.ctx`
+ ###### persistent-handle: 0x81000001
+ ###### action: persisted
+
+ `tpm2_readpublic -c 0x81000001 -o output.dat -f pem -t primary.handle`
+ ###### use the persistent handle to get a serialized handle
+
+ `tpm2_startauthsession --policy-session -S session.ctx -c primary.handle`
+ ###### use this verified handle in an encrypted session with the tpm
+ 
