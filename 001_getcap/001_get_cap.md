@@ -90,3 +90,13 @@
     ecb:
       ...
 
+## Export a public key
+
+`tpm2_createprimary -c primary.ctx`
+###### Create a primary object
+
+`tpm2_readpublic -c primary.ctx -o output.dat -f pem`
+###### read the public structure in an openssl compliant format
+
+
+
