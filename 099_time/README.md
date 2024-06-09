@@ -4,6 +4,10 @@
 #### Create a key and get attested TPM time
 
 ## Example - Create a rsa key and get attested TPM time
+
+#### (0) Read Clock directly from TPM to check
+`tpm2_readclock` 
+
 #### (1) Create a primary, and export as primary.ctx
 `tpm2_createprimary -C e -c primary.ctx`
 
