@@ -21,6 +21,10 @@ Authorization for use of an object in TPM2.0 can come in 3 different forms:
 2.  HMAC
 3.  Sessions
 
+## Keys
+- Attestation key (AK)
+
+
 ## PCR
 
 ## Policy
