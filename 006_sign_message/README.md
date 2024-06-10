@@ -27,6 +27,3 @@ Generates signature of specified message or message-digest using the specified s
 `tpm2_verifysignature -c rsa.ctx -g sha256 -s sig.rssa -m message.dat`
 ###### Verify the message and the signature with the rsa private key
 
-
-`tpm2_createprimary -C o -g sha384 -c primary.ctx`
-`tpm2_create -G aes -r aes.priv -C primary.ctx`
