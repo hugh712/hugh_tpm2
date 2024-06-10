@@ -40,6 +40,9 @@ To create keys for signing, one needs to first create a primary key under any of
 
 The primary key cannot sign. It can only decrypt the child key for signing. This is specified by what is called key attributes. The key's attributes are set at key creation. These attributes are used to control the behaviour of the keys[0].
 
+![alt text](../pics/tpm_primary.jpg "tpm primary key and child key")
+
+![alt text](../pics/primary_key_life_cycle.jpg "tpm primary key life cycle")
 
 ## Hierachy
 - o for TPM_RH_OWNER
