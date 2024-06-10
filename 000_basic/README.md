@@ -43,9 +43,15 @@ The primary key cannot sign. It can only decrypt the child key for signing. This
 
 ## Hierachy
 - o for TPM_RH_OWNER
+    - Permanent
+    - Default   
 - p for TPM_RH_PLATFORM
+    - Permanent
 - e for TPM_RH_ENDORSEMENT
+    - Permanent 
 - n for TPM_RH_NULL
+    - Temporary
+    - No password and policy authentication
 
 ## Authorization
 ![alt text](../pics/tpm_auth.jpg "tpm authorization")
@@ -65,6 +71,7 @@ Authorization for use of an object in TPM2.0 can come in 3 different forms:
 - Endorsement Key (EK)
 - Attestation key (AK)
 - Attestation Identity Key (AIK)
+- KEK
 
 
 ## Bank
