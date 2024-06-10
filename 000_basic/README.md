@@ -1,11 +1,14 @@
 
 
-## Bank
-
 ## Hash
+
+#### Hash Extend
 
 ## HMAC
 
+## Nonce
+
+## KDF
 
 ## Symmetric & Asymmetric Algorithm
 Check https://github.com/tpm2-software/tpm2-tools/blob/master/man/common/object-alg.md
@@ -44,6 +47,8 @@ Authorization for use of an object in TPM2.0 can come in 3 different forms:
 - Attestation Identity Key (AIK)
 
 
+## Bank
+
 ## PCR
 
 ## Policy
@@ -51,6 +56,8 @@ Authorization for use of an object in TPM2.0 can come in 3 different forms:
 ## Session
 
 ## TCTI
+
+## Ref
 
 [0] https://dev.to/nandhithakamal/tpm-part-1-4emf
 
