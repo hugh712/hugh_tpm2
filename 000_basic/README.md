@@ -1,4 +1,16 @@
 
+## Why TPM
+
+- Generate security key
+    - RSA, AES, ECC…
+- Store security Key
+    - Temporary or Permanent 
+- Manage security key
+    - Encrypt, import, export, migration 
+- protect security key
+    - Authorization, protect from attack 
+- Use security key
+
 
 ## Hash
 
