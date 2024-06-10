@@ -48,7 +48,7 @@ The primary key cannot sign. It can only decrypt the child key for signing. This
 - n for TPM_RH_NULL
 
 ## Authorization
-![alt text](../pics/tpm_auth.png "tpm authorization")
+![alt text](../pics/tpm_auth.jpg "tpm authorization")
 
 ## Authorization Formatting
 Authorization for use of an object in TPM2.0 can come in 3 different forms: 
