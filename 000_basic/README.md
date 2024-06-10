@@ -1,7 +1,11 @@
 
 
-
 ## Bank
+
+## Hash
+
+## HMAC
+
 
 ## Symmetric & Asymmetric Algorithm
 Check https://github.com/tpm2-software/tpm2-tools/blob/master/man/common/object-alg.md
