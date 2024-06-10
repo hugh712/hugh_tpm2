@@ -114,6 +114,7 @@
 
  ## About Attributes
  Please read https://github.com/tpm2-software/tpm2-tools/blob/master/man/common/obj-attrs.md
+ 
  And check "TPMA_OBJECT (Object Attributes)" section on the spec TPM-Rev-2.0-Part-2-Structures.pdf
  
  
