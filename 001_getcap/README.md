@@ -111,4 +111,14 @@
 
  `tpm2_startauthsession --policy-session -S session.ctx -c primary.handle`
  ###### use this verified handle in an encrypted session with the tpm
+
+ ## About Attributes
+
+ ###### TPMA_OBJECT_RESTRICTED
+ ###### TPMA_OBJECT_DECRYPT
+ ###### TPMA_OBJECT_FIXEDTPM
+ ###### TPMA_OBJECT_FIXEDPARENT
+ ###### TPMA_OBJECT_SENSITIVEDATAORIGIN
+ ###### TPMA_OBJECT_USERWITHAUTH
+ 
  
