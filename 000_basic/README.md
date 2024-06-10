@@ -56,6 +56,11 @@ Authorization for use of an object in TPM2.0 can come in 3 different forms:
 2.  HMAC
 3.  Sessions
 
+## Policy
+![alt text](../pics/tpm_auth-2.jpg "tpm authorization")
+
+## Session
+
 ## Keys
 - Endorsement Key (EK)
 - Attestation key (AK)
@@ -65,10 +70,6 @@ Authorization for use of an object in TPM2.0 can come in 3 different forms:
 ## Bank
 
 ## PCR
-
-## Policy
-
-## Session
 
 ## TCTI
 
