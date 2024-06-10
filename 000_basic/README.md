@@ -13,7 +13,7 @@ Check https://github.com/tpm2-software/tpm2-tools/blob/master/man/common/object-
 `openssl enc -d -aes-256-cbc -in encrypted.data -out un_encrypted.data`
 
 ## Sign with Asymmetric (Use OpenSSL as example)
-
+Ref [x2]
 
 
 ## Primary
@@ -48,3 +48,4 @@ Authorization for use of an object in TPM2.0 can come in 3 different forms:
 
 [0] https://dev.to/nandhithakamal/tpm-part-1-4emf
 [x1] https://stackoverflow.com/questions/16056135/how-to-use-openssl-to-encrypt-decrypt-files
+[x2] https://opensource.com/article/21/4/encryption-decryption-openssl
