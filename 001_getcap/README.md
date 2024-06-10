@@ -113,12 +113,7 @@
  ###### use this verified handle in an encrypted session with the tpm
 
  ## About Attributes
-
- ###### TPMA_OBJECT_RESTRICTED
- ###### TPMA_OBJECT_DECRYPT
- ###### TPMA_OBJECT_FIXEDTPM
- ###### TPMA_OBJECT_FIXEDPARENT
- ###### TPMA_OBJECT_SENSITIVEDATAORIGIN
- ###### TPMA_OBJECT_USERWITHAUTH
+ Please read https://github.com/tpm2-software/tpm2-tools/blob/master/man/common/obj-attrs.md
+ And check "TPMA_OBJECT (Object Attributes)" section on the spec TPM-Rev-2.0-Part-2-Structures.pdf
  
  
