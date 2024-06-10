@@ -35,7 +35,9 @@ Authorization for use of an object in TPM2.0 can come in 3 different forms:
 3.  Sessions
 
 ## Keys
+- Endorsement Key (EK)
 - Attestation key (AK)
+- Attestation Identity Key (AIK)
 
 
 ## PCR
