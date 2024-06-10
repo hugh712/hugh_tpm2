@@ -6,6 +6,16 @@
 ## Symmetric & Asymmetric Algorithm
 Check https://github.com/tpm2-software/tpm2-tools/blob/master/man/common/object-alg.md
 
+
+## Sign with Symmetric (Use OpenSSL as example)
+`openssl enc -aes-256-cbc -in un_encrypted.data -out encrypted.data`
+
+`openssl enc -d -aes-256-cbc -in encrypted.data -out un_encrypted.data`
+
+## Sign with Asymmetric (Use OpenSSL as example)
+
+
+
 ## Primary
 To create keys for signing, one needs to first create a primary key under any of the 4 hierarchies. This primary key can now be used to create children keys. The children keys can now be used for signing. It is also possible for each child key of the primary key to become parent keys if it meets certain conditions. Thus one can have a deep hierarchy of keys.
 
@@ -37,3 +47,4 @@ Authorization for use of an object in TPM2.0 can come in 3 different forms:
 ## TCTI
 
 [0] https://dev.to/nandhithakamal/tpm-part-1-4emf
+[x1] https://stackoverflow.com/questions/16056135/how-to-use-openssl-to-encrypt-decrypt-files
