@@ -60,6 +60,8 @@ The primary key cannot sign. It can only decrypt the child key for signing. This
 - n for TPM_RH_NULL
     - Temporary
     - No password and policy authentication
+ 
+Check section "14.7 Context Protection" in [X3]
 
 ## Authorization
 ![alt text](../pics/tpm_auth.jpg "tpm authorization")
@@ -95,3 +97,5 @@ Authorization for use of an object in TPM2.0 can come in 3 different forms:
 [x1] https://stackoverflow.com/questions/16056135/how-to-use-openssl-to-encrypt-decrypt-files
 
 [x2] https://opensource.com/article/21/4/encryption-decryption-openssl
+
+[x3] https://trustedcomputinggroup.org/wp-content/uploads/TPM-Rev-2.0-Part-2-Structures-01.38.pdf
