@@ -26,6 +26,8 @@
 - https://en.wikipedia.org/wiki/Cryptographic_nonce
 
 ## KDF
+- https://en.wikipedia.org/wiki/Key_derivation_function
+- https://www.openssl.org/docs/man3.2/man1/openssl-kdf.html
 
 ## Symmetric & Asymmetric Algorithm
 Check https://github.com/tpm2-software/tpm2-tools/blob/master/man/common/object-alg.md
