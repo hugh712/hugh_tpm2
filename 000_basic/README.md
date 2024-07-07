@@ -13,16 +13,17 @@
 
 
 ## Hash
-https://en.wikipedia.org/wiki/Hash_function
+- https://en.wikipedia.org/wiki/Hash_function
 
 #### Hash Extend
-https://en.wikipedia.org/wiki/Extendible_hashing
+- https://en.wikipedia.org/wiki/Extendible_hashing
 
 ## HMAC
-https://www.okta.com/identity-101/hmac/
-https://en.wikipedia.org/wiki/HMAC
+- https://www.okta.com/identity-101/hmac/
+- https://en.wikipedia.org/wiki/HMAC
 
 ## Nonce
+- https://en.wikipedia.org/wiki/Cryptographic_nonce
 
 ## KDF
 
