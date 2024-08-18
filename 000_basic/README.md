@@ -81,7 +81,18 @@ Authorization for use of an object in TPM2.0 can come in 3 different forms:
 
 ## Keys
 - Endorsement Key (EK)
+
+An Endorsement Key is a special purpose TPM-resident RSA key that is never visible outside
+of the TPM. Because the EK can only be used for encryption, possession of the private EK can
+only be proved indirectly, by using it to decrypt a value that has been encrypted with the public
+EK. Therefore, while the EK cannot be used to produce a digital signature, it is able to provide for
+TPM authentication based on decryption operations. [x4]
+
+EK cannot be used to sign data. Only thing EK can pretty much be used for is for AIK enrollment.
+
 - Attestation key (AK)
+The purpose of AKs is to sign data (e.g. PCR values) to prove that they originate from a real TPM (without having been tampered with). Remember, we cannot use the EK for signing directly.
+
 - Attestation Identity Key (AIK)
 - KEK
 
@@ -101,3 +112,7 @@ Authorization for use of an object in TPM2.0 can come in 3 different forms:
 [x2] https://opensource.com/article/21/4/encryption-decryption-openssl
 
 [x3] https://trustedcomputinggroup.org/wp-content/uploads/TPM-Rev-2.0-Part-2-Structures-01.38.pdf
+
+[x4] https://trustedcomputinggroup.org/wp-content/uploads/IWG-EK-CMC-enrollment-for-TPM-v1-2-FAQ-rev-April-3-2013.pdf
+
+[x5] https://stackoverflow.com/questions/56561540/how-can-i-sign-data-with-the-endorsement-key-ek-of-a-tpm
