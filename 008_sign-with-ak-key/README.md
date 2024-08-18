@@ -28,9 +28,11 @@
 `- 0x80000000`
 
 
-## Example 4 - Create an Attestation Key and make it persistent
+## Example 4 - Create an Attestation Key, make it persistent and sign a message.
 `sudo tpm2_createek -c ek.handle -G rsa -u ek.pub`
 
 `sudo tpm2_createak -C ek.handle -c ak.ctx -u ak.pub -n ak.name`
 
 `sudo tpm2_evictcontrol -C o -c ak.ctx 0x81010002`
+
+`TBD`
